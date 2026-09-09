@@ -32,7 +32,7 @@ body {
     min-height: 20px;
 }
 
-#videoInput {
+#imageInput {
     margin-bottom: 20px;
     padding: 12px 20px;
     background: #1a1a1a;
@@ -45,47 +45,10 @@ body {
     font-size: 14px;
 }
 
-#videoInput:hover {
+#imageInput:hover {
     background: #00ffff;
     color: #0a0a0a;
     transform: scale(1.05);
-}
-
-.controls {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#playPauseBtn {
-    padding: 8px 16px;
-    background: #1a1a1a;
-    border: 1px solid #00ffff;
-    color: #00ffff;
-    cursor: pointer;
-    font-family: monospace;
-    border-radius: 4px;
-    transition: all 0.3s;
-    font-size: 12px;
-}
-
-#playPauseBtn:hover {
-    background: #00ffff;
-    color: #0a0a0a;
-}
-
-#speedSlider {
-    width: 100px;
-    cursor: pointer;
-    accent-color: #00ffff;
-}
-
-#speedLabel {
-    font-size: 12px;
-    min-width: 30px;
 }
 
 canvas {

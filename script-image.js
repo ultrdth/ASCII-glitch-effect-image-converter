@@ -24,7 +24,7 @@ let isAnimating = false;
 
 // ========== LOAD IMAGE ==========
 function loadImage(file) {
-    status.textContent = '⏳ Processing image...';
+    status.textContent = 'Processing image...';
     
     const reader = new FileReader();
     reader.onload = function(e) {
@@ -52,7 +52,7 @@ function loadImage(file) {
                 glitch: 0
             }));
             
-            status.textContent = '✨ Image loaded! Watch it transform...';
+            status.textContent = 'Image loaded. Processing...';
             
             if (!isAnimating) {
                 isAnimating = true;
@@ -60,7 +60,7 @@ function loadImage(file) {
             }
         };
         img.onerror = function() {
-            status.textContent = '❌ Error loading image. Try another.';
+            status.textContent = 'Error loading image. Try another.';
         };
         img.src = e.target.result;
     };
@@ -121,7 +121,7 @@ function render() {
         ctx.font = 'bold 24px monospace';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('Upload an image →', canvas.width / 2, canvas.height / 2 - 20);
+        ctx.fillText('Upload an image', canvas.width / 2, canvas.height / 2 - 20);
         ctx.font = '16px monospace';
         ctx.fillText('(any picture works)', canvas.width / 2, canvas.height / 2 + 25);
         return;
